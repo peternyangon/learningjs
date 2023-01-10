@@ -52,5 +52,25 @@ let fibSeq = (n) => {
     return fibSeq(n - 1) + fibSeq(n - 2);
 }
 
-console.log(fibSeq(4));
+console.log(fibSeq(20));
+
+function Dog(dogName, weight, color, breed) {
+    this.dogName = dogName;
+    this.weight = weight;
+    this.color = color;
+    this.breed = breed;
+}
+let dog = new Dog("javaScript", 2.4, "brown", "chihuahua");
+console.log(dog.breed)
+
+class Dog {
+    constructor(dogName, weight, color, breed) {
+        this.dogName = dogName;
+        this.weight = weight;
+        this.color = color;
+        this.breed = breed;
+    }
+}
+
+
 
