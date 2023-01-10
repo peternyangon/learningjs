@@ -63,14 +63,47 @@ function Dog(dogName, weight, color, breed) {
 let dog = new Dog("javaScript", 2.4, "brown", "chihuahua");
 console.log(dog.breed)
 
-class Dog {
-    constructor(dogName, weight, color, breed) {
-        this.dogName = dogName;
-        this.weight = weight;
-        this.color = color;
-        this.breed = breed;
+// class Dog {
+//     constructor(dogName, weight, color, breed) {
+//         this.dogName = dogName;
+//         this.weight = weight;
+//         this.color = color;
+//         this.breed = breed;
+//     }
+// }
+
+//The new word is what tell javaScript to look for the special constructor function in the Person class and create a new object.
+//The Constructor get called and returns an instance of the person object with the specified properties.
+//This object gets stored in ths p variable.
+
+//in class we can specified functions. This means that our object can start doing things the object's properties-for example printing a name.
+//Functions on a class are called methods. When defining these methods we don't use the function keyword.we start directly with name.
+
+// class Person {
+//     constructor(firstName, secondName) {
+//         this.firstName = firstName;
+//         this.secondName = secondName;
+//     }
+
+//     greet() {
+//         console.log("Hi there! I'm", this.firstName);
+//     }
+// }
+
+// let p = new Person("Peter", "Nyangon");
+// p.greet()
+
+class Person {
+    constructor(firstname, lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    greet() {
+        console.log("Hi there! I'm", this.firstname);
     }
 }
 
+let p = new Person("Maaike", "van Putten");
+p.greet();
 
 
