@@ -46,3 +46,11 @@ let factorialNumbers = (n) => {
 
 console.log(factorialNumbers(10));
 
+let fibSeq = (n) => {
+    if (n <= 1)
+        return 1
+    return fibSeq(n - 1) + fibSeq(n - 2);
+}
+
+console.log(fibSeq(4));
+
