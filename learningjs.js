@@ -93,6 +93,29 @@ class Person {
 let p = new Person("Peter", "Nyangon");
 p.greet()
 
+//Switch statement in js as a decision structure
+let switchStatement = function (grade) {
+    switch (grade) {
+        case "A":
+            console.log("you have passed with flying colors");
+            break;
+        case "B":
+            console.log("you have excelled in this course my good student");
+            break;
+
+        case "C":
+            console.log("You have passed the course");
+            break;
+
+        default:
+            console.log("You have failed the course");
+            break;
+    }
+}
+
+switchStatement("C");
+
+
 // class Person {
 //     constructor(firstname, lastname) {
 //         this.firstname = firstname;
