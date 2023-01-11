@@ -79,31 +79,31 @@ console.log(dog.breed)
 //in class we can specified functions. This means that our object can start doing things the object's properties-for example printing a name.
 //Functions on a class are called methods. When defining these methods we don't use the function keyword.we start directly with name.
 
-// class Person {
-//     constructor(firstName, secondName) {
-//         this.firstName = firstName;
-//         this.secondName = secondName;
-//     }
-
-//     greet() {
-//         console.log("Hi there! I'm", this.firstName);
-//     }
-// }
-
-// let p = new Person("Peter", "Nyangon");
-// p.greet()
-
 class Person {
-    constructor(firstname, lastname) {
-        this.firstname = firstname;
-        this.lastname = lastname;
+    constructor(firstName, secondName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
     }
+
     greet() {
-        console.log("Hi there! I'm", this.firstname);
+        console.log("Hi there! I'm", this.firstName);
     }
 }
 
-let p = new Person("Maaike", "van Putten");
-p.greet();
+let p = new Person("Peter", "Nyangon");
+p.greet()
+
+// class Person {
+//     constructor(firstname, lastname) {
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//     }
+//     greet() {
+//         console.log("Hi there! I'm", this.firstname);
+//     }
+// }
+
+// let p = new Person("Maaike", "van Putten");
+// p.greet();
 
 
