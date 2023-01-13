@@ -1,3 +1,5 @@
+
+
 let calc = function (num1, num2) {
     let sum = num1 + num2;
     console.log(sum);
@@ -98,6 +100,8 @@ let switchStatement = function (grade) {
     switch (grade) {
         case "A":
             console.log("you have passed with flying colors");
+            console.log("This is the best grade ever in my class")
+            console.log("You must have studied hard for this course")
             break;
         case "B":
             console.log("you have excelled in this course my good student");
@@ -113,7 +117,12 @@ let switchStatement = function (grade) {
     }
 }
 
-switchStatement("C");
+switchStatement("A");
+
+// let number;
+// do {
+//     number = prompt("Please enter a number between 0 and 100: ");
+// } while (!(number >= 0 && number < 100));
 
 
 // class Person {
@@ -128,5 +137,4 @@ switchStatement("C");
 
 // let p = new Person("Maaike", "van Putten");
 // p.greet();
-
 
